@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Header, Sidebar, Footer Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      background: #09abd3;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      display: flex;
+      flex: 1;
+    }
+    aside {
+      background: #f4f4f4;
+      width: 200px;
+      padding: 1rem;
+    }
+    main {
+      flex: 1;
+      padding: 1rem;
+    }
+    footer {
+      background: #ef0b76;
+      color: #2be10a;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Website Header</h1>
+  </header>
+  <div class="container">
+    <aside>
+      <h2>Sidebar</h2>
+      <ul>
+        <li><a href="#">book1</a></li>
+        <li><a href="#">book2</a></li>
+        <li><a href="#">book3</a></li>
+      </ul>
+    </aside>
+    <main>
+      <h2>Main Content</h2>
+      <p>Your main content goes here.</p>
+    </main>
+  </div>
+  <footer>
+    &copy; 2025 My Website Footer
+  </footer>
+</body>

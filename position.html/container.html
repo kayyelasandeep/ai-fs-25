@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive 4 Box Flex Layout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d95d8;
+    }
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      padding: 16px;
+      justify-content: center;
+    }
+    .box {
+      background: #04edbe;
+      color: #0d0f10;
+      flex: 1 1 200px;
+      min-width: 200px;
+      max-width: 300px;
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(10, 11, 2, 0.1);
+    }
+    @media (max-width: 500px) {
+      .box {
+        max-width: 100%;
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+    <strong>
+  <div class="flex-container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+    <div class="box">Box 6</div>
+    <div class="box">Box 7</div>
+    <div class="box">Box 8</div>
+
+  </div>
+</body>
+</strong>
+</html>
